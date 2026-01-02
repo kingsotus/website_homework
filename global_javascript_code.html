@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><link href="css/global_javascript_code.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Attitudes International - Global JS Admin</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-hidden flex flex-col h-screen">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#2a3737] bg-surface-dark px-6 py-3 z-20 shadow-md">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 dark:border-b-surface-border px-6 lg:px-10 py-4 bg-background-light dark:bg-[#121717]/90 backdrop-blur-md fixed top-0 w-full transition-all duration-300">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary">
+<svg class="h-full w-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.7775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Attitudes International</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9">
+<a class="text-slate-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="index.html">Home</a>
+<a class="text-slate-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="consultation_services_-_attitudes_international_code.html">Our Services</a>
+<a class="text-slate-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="contact_us_-_attitudes_international_code.html">Contact Us</a>
+</nav>
+</div>
+<div class="md:hidden text-slate-900 dark:text-white">
+<span class="material-symbols-outlined cursor-pointer">menu</span>
+</div>
+</header>
+</header>
+<div class="flex flex-1 overflow-hidden">
+<!-- SideNavBar -->
+<aside class="w-64 flex flex-col border-r border-[#2a3737] bg-surface-dark hidden lg:flex">
+<div class="flex flex-col h-full">
+<div class="p-4 border-b border-[#2a3737]">
+<h1 class="text-white text-sm font-semibold uppercase tracking-wider text-[#9fb7b7] mb-1">Project</h1>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-accent-gold text-lg">folder_open</span>
+<p class="text-white text-sm font-medium truncate">Attitudes Int. Static</p>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto py-2">
+<!-- Section: Assets -->
+<div class="px-2">
+<div class="flex items-center gap-2 px-2 py-1.5 text-[#9fb7b7] hover:text-white cursor-pointer group">
+<span class="material-symbols-outlined text-[18px] group-hover:text-primary transition-colors">folder</span>
+<span class="text-sm">assets</span>
+</div>
+<div class="pl-6 border-l border-[#2a3737] ml-4 my-1">
+<div class="flex items-center gap-2 px-2 py-1.5 text-[#9fb7b7] hover:text-white cursor-pointer group">
+<span class="material-symbols-outlined text-[18px] group-hover:text-primary transition-colors">folder</span>
+<span class="text-sm">css</span>
+</div>
+<div class="flex items-center gap-2 px-2 py-1.5 bg-primary/10 rounded-md text-white cursor-pointer">
+<span class="material-symbols-outlined text-[18px] text-accent-gold">javascript</span>
+<span class="text-sm font-medium">js</span>
+</div>
+<!-- Nested JS files -->
+<div class="pl-6 border-l border-[#2a3737] ml-2 my-1">
+<div class="flex items-center gap-2 px-2 py-1.5 bg-[#2a3737] rounded text-white cursor-pointer border-l-2 border-primary">
+<span class="material-symbols-outlined text-[16px] text-[#9fb7b7]">description</span>
+<span class="text-xs font-mono">global.js</span>
+</div>
+<div class="flex items-center gap-2 px-2 py-1.5 text-[#9fb7b7] hover:text-white cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">description</span>
+<span class="text-xs font-mono">analytics.js</span>
+</div>
+</div>
+<div class="flex items-center gap-2 px-2 py-1.5 text-[#9fb7b7] hover:text-white cursor-pointer group">
+<span class="material-symbols-outlined text-[18px] group-hover:text-primary transition-colors">folder</span>
+<span class="text-sm">images</span>
+</div>
+</div>
+</div>
+<!-- Section: Root files -->
+<div class="px-2 mt-2">
+<div class="flex items-center gap-2 px-2 py-1.5 text-[#9fb7b7] hover:text-white cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">html</span>
+<span class="text-sm">index.html</span>
+</div>
+</div>
+</div>
+<!-- Bottom Actions -->
+<div class="p-4 border-t border-[#2a3737]">
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#2a3737] cursor-pointer text-[#9fb7b7] hover:text-white transition-colors">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-sm font-medium">Project Settings</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col min-w-0 bg-background-dark relative">
+<!-- Breadcrumbs & Heading -->
+<div class="flex flex-col border-b border-[#2a3737] bg-surface-dark px-6 py-4">
+<div class="flex flex-wrap gap-2 mb-2 items-center">
+<span class="material-symbols-outlined text-[#9fb7b7] text-sm">home</span>
+<span class="text-[#9fb7b7] text-xs font-medium">/</span>
+<a class="text-[#9fb7b7] hover:text-primary text-xs font-medium" href="#">assets</a>
+<span class="text-[#9fb7b7] text-xs font-medium">/</span>
+<a class="text-[#9fb7b7] hover:text-primary text-xs font-medium" href="#">js</a>
+<span class="text-[#9fb7b7] text-xs font-medium">/</span>
+<span class="text-primary text-xs font-medium bg-primary/10 px-1.5 py-0.5 rounded">global.js</span>
+</div>
+<div class="flex flex-wrap justify-between items-end gap-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3">
+<h1 class="text-white text-2xl font-bold tracking-tight">global.js</h1>
+<span class="text-xs font-medium text-accent-gold border border-accent-gold/30 bg-accent-gold/10 px-2 py-0.5 rounded-full">Modified</span>
+</div>
+<p class="text-[#9fb7b7] text-sm font-normal">Core interactive logic: Navigation, filtering, and accessibility helpers.</p>
+</div>
+<div class="flex gap-3">
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg border border-[#2a3737] bg-transparent text-[#9fb7b7] hover:text-white hover:bg-[#2a3737] hover:border-white/20 transition-all text-sm font-medium">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>History</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary hover:bg-primary/90 text-background-dark text-sm font-bold transition-all shadow-[0_0_15px_rgba(32,197,197,0.3)]">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Changes</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Editor & Tools Area -->
+<div class="flex flex-1 overflow-hidden">
+<!-- Code Editor View -->
+<div class="flex-1 overflow-auto bg-[#0d1414] relative flex flex-col">
+<!-- Editor Toolbar -->
+<div class="flex items-center justify-between px-4 py-2 bg-[#162020] border-b border-[#2a3737] sticky top-0 z-10">
+<div class="flex gap-4">
+<button class="text-xs text-white font-medium hover:text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">code</span> View Source
+                            </button>
+<button class="text-xs text-[#9fb7b7] font-medium hover:text-white flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">preview</span> Split View
+                            </button>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-xs text-[#5f7a7a]">Ln 14, Col 32</span>
+<span class="text-xs text-[#5f7a7a]">UTF-8</span>
+<span class="text-xs text-[#5f7a7a]">JavaScript</span>
+</div>
+</div>
+<!-- Actual Code Content (Styled) -->
+<div class="p-4 font-mono text-sm leading-6 cursor-text min-h-full" contenteditable="true" spellcheck="false">
+<div class="code-line"><span class="text-[#5f7a7a] italic">// Global functionality for Attitudes International</span></div>
+<div class="code-line"><span class="text-[#5f7a7a] italic">// Last Updated: Oct 24, 2023 by SysAdmin</span></div>
+<div class="code-line"></div>
+<div class="code-line"><span class="text-accent-gold">document</span>.<span class="text-primary">addEventListener</span>(<span class="text-[#a5d6ff]">'DOMContentLoaded'</span>, () <span class="text-accent-gold">=&gt;</span> {</div>
+<div class="code-line"> <span class="text-[#5f7a7a] italic">// Initialize Mobile Navigation</span></div>
+<div class="code-line"> <span class="text-accent-gold">const</span> navToggle = <span class="text-accent-gold">document</span>.<span class="text-primary">querySelector</span>(<span class="text-[#a5d6ff]">'#nav-toggle'</span>);</div>
+<div class="code-line"> <span class="text-accent-gold">const</span> mobileMenu = <span class="text-accent-gold">document</span>.<span class="text-primary">querySelector</span>(<span class="text-[#a5d6ff]">'#mobile-menu'</span>);</div>
+<div class="code-line"></div>
+<div class="code-line"> <span class="text-purple-400">if</span> (navToggle &amp;&amp; mobileMenu) {</div>
+<div class="code-line">        navToggle.<span class="text-primary">addEventListener</span>(<span class="text-[#a5d6ff]">'click'</span>, () <span class="text-accent-gold">=&gt;</span> {</div>
+<div class="code-line"> <span class="text-accent-gold">const</span> isExpanded = navToggle.<span class="text-primary">getAttribute</span>(<span class="text-[#a5d6ff]">'aria-expanded'</span>) === <span class="text-[#a5d6ff]">'true'</span>;</div>
+<div class="code-line">            navToggle.<span class="text-primary">setAttribute</span>(<span class="text-[#a5d6ff]">'aria-expanded'</span>, !isExpanded);</div>
+<div class="code-line">            mobileMenu.classList.<span class="text-primary">toggle</span>(<span class="text-[#a5d6ff]">'hidden'</span>);</div>
+<div class="code-line"> <span class="text-[#5f7a7a] italic">// Animate icon transformation</span></div>
+<div class="code-line">            navToggle.classList.<span class="text-primary">toggle</span>(<span class="text-[#a5d6ff]">'active'</span>);</div>
+<div class="code-line">        });</div>
+<div class="code-line">    }</div>
+<div class="code-line"></div>
+<div class="code-line"> <span class="text-[#5f7a7a] italic">// Insights Page Tag Filtering (Lightweight)</span></div>
+<div class="code-line"> <span class="text-accent-gold">const</span> filterButtons = <span class="text-accent-gold">document</span>.<span class="text-primary">querySelectorAll</span>(<span class="text-[#a5d6ff]'.filter-btn'&lt;/span&gt;);&lt;/div&gt; &lt;div class=" code-line"=""> <span class="text-accent-gold">const</span> articles = <span class="text-accent-gold">document</span>.<span class="text-primary">querySelectorAll</span>(<span class="text-[#a5d6ff]'.insight-card'&lt;/span&gt;);&lt;/div&gt; &lt;div class=" code-line"=""></span></span></div>
+<div class="code-line">    filterButtons.<span class="text-primary">forEach</span>(btn <span class="text-accent-gold">=&gt;</span> {</div>
+<div class="code-line">        btn.<span class="text-primary">addEventListener</span>(<span class="text-[#a5d6ff]'click'&lt;/span&gt;, (e) &lt;span class=" text-accent-gold"="">=&gt;</span> {</div>
+<div class="code-line"> <span class="text-accent-gold">const</span> filter = e.target.dataset.filter;</div>
+<div class="code-line"> </div>
+<div class="code-line"> <span class="text-[#5f7a7a] italic">// Update Active State</span></div>
+<div class="code-line"> <span class="text-accent-gold">document</span>.<span class="text-primary">querySelector</span>(<span class="text-[#a5d6ff]'.filter-btn.active'&lt;/span&gt;)?.classList.&lt;span class=" text-primary"="">remove</span>(<span class="text-[#a5d6ff]'active'&lt;/span&gt;);&lt;/div&gt; &lt;div class=" code-line"="">            e.target.classList.<span class="text-primary">add</span>(<span class="text-[#a5d6ff]'active'&lt;/span&gt;);&lt;/div&gt; &lt;div class=" code-line"=""> </span></span></div>
+<div class="code-line"> <span class="text-primary">filterContent</span>(filter, articles);</div>
+<div class="code-line">        });</div>
+<div class="code-line">    });</div>
+<div class="code-line">});</div>
+<div class="code-line"></div>
+<div class="code-line"><span class="text-accent-gold">function</span> <span class="text-primary">filterContent</span>(category, items) {</div>
+<div class="code-line">    items.<span class="text-primary">forEach</span>(item <span class="text-accent-gold">=&gt;</span> {</div>
+<div class="code-line"> <span class="text-accent-gold">const</span> itemCategory = item.dataset.category;</div>
+<div class="code-line"> <span class="text-purple-400">if</span> (category === <span class="text-[#a5d6ff]'all'&lt;/span&gt; || category === itemCategory) {&lt;/div&gt; &lt;div class=" code-line"="">             item.style.display = <span class="text-[#a5d6ff]'block'&lt;/span&gt;;&lt;/div&gt; &lt;div class=" code-line"="">         } <span class="text-purple-400">else</span> {</span></span></div>
+<div class="code-line">             item.style.display = <span class="text-[#a5d6ff]'none'&lt;/span&gt;;&lt;/div&gt; &lt;div class=" code-line"="">         }</span></div>
+<div class="code-line">    });</div>
+<div class="code-line">}</div>
+</div>
+</div>
+<!-- Right Sidebar: Modules & Functions -->
+<aside class="w-72 bg-surface-dark border-l border-[#2a3737] overflow-y-auto hidden xl:block">
+<div class="p-4">
+<h3 class="text-xs font-bold text-[#9fb7b7] uppercase tracking-wider mb-4">Detected Functions</h3>
+<!-- Module Item -->
+<div class="mb-4 bg-[#162020] rounded-lg p-3 border border-[#2a3737]">
+<div class="flex items-center justify-between mb-2">
+<span class="text-white text-sm font-medium">Mobile Navigation</span>
+<div class="size-2 rounded-full bg-primary shadow-[0_0_8px_rgba(32,197,197,0.8)]"></div>
+</div>
+<p class="text-[#9fb7b7] text-xs leading-relaxed mb-3">Handles hamburger menu toggle and ARIA attribute updates for accessibility.</p>
+<div class="flex items-center justify-between">
+<span class="text-[#5f7a7a] text-xs font-mono">Ln 4-13</span>
+<button class="text-primary text-xs hover:underline">Jump to line</button>
+</div>
+</div>
+<!-- Module Item -->
+<div class="mb-4 bg-[#162020] rounded-lg p-3 border border-[#2a3737]">
+<div class="flex items-center justify-between mb-2">
+<span class="text-white text-sm font-medium">Tag Filter</span>
+<div class="size-2 rounded-full bg-primary shadow-[0_0_8px_rgba(32,197,197,0.8)]"></div>
+</div>
+<p class="text-[#9fb7b7] text-xs leading-relaxed mb-3">Client-side filtering for the Insights grid layout based on data attributes.</p>
+<div class="flex items-center justify-between">
+<span class="text-[#5f7a7a] text-xs font-mono">Ln 16-29</span>
+<button class="text-primary text-xs hover:underline">Jump to line</button>
+</div>
+</div>
+<!-- Module Item (Disabled/Warn) -->
+<div class="mb-4 bg-[#162020] rounded-lg p-3 border border-[#2a3737] opacity-60 hover:opacity-100 transition-opacity">
+<div class="flex items-center justify-between mb-2">
+<span class="text-white text-sm font-medium">Lazy Load Observer</span>
+<div class="size-2 rounded-full bg-[#2a3737]"></div>
+</div>
+<p class="text-[#9fb7b7] text-xs leading-relaxed mb-3">IntersectionObserver implementation for images.</p>
+<div class="flex items-center justify-between">
+<span class="text-[#5f7a7a] text-xs font-mono">Not detected</span>
+<button class="text-[#9fb7b7] text-xs border border-[#2a3737] rounded px-2 py-0.5 hover:bg-[#2a3737] hover:text-white">Insert Snippet</button>
+</div>
+</div>
+<div class="h-px bg-[#2a3737] my-4"></div>
+<h3 class="text-xs font-bold text-[#9fb7b7] uppercase tracking-wider mb-4">File Stats</h3>
+<div class="grid grid-cols-2 gap-2">
+<div class="p-2 rounded bg-[#162020] border border-[#2a3737]">
+<span class="block text-[#5f7a7a] text-xs">Size</span>
+<span class="block text-white font-mono text-sm">4.2 KB</span>
+</div>
+<div class="p-2 rounded bg-[#162020] border border-[#2a3737]">
+<span class="block text-[#5f7a7a] text-xs">Lines</span>
+<span class="block text-white font-mono text-sm">342</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<!-- Bottom Status Bar -->
+<footer class="h-8 bg-primary text-background-dark flex items-center justify-between px-4 text-xs font-medium z-20">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                        No Syntax Errors
+                    </span>
+<span class="flex items-center gap-1 opacity-70">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+                        0 Warnings
+                    </span>
+</div>
+<div class="flex items-center gap-4 opacity-80">
+<span>Prettier: On</span>
+<span>ES6+</span>
+</div>
+</footer>
+</main>
+</div>
+<script src="js/global_javascript_code.js"></script></body></html>

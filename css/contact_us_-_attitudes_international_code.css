@@ -1,0 +1,10 @@
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .text-gradient-gold {
+            background: linear-gradient(to right, #d4af37, #f3e5ab);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    
